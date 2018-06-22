@@ -1,0 +1,13 @@
+<%= form_with(model: [ @article, @article.infos.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :address %><br>
+    <%= form.text_area :address %>
+  </p>
+  <p>
+    <%= form.label :telephone %><br>
+    <%= form.text_field :telephone %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

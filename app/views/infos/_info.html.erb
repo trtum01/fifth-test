@@ -1,0 +1,16 @@
+
+<p>
+  <strong>Address:</strong>
+  <%= info.address %>
+</p>
+ 
+<p>
+  <strong>Tel:</strong>
+  <%= info.telephone %>
+</p>
+ 
+<p>
+  <%= link_to 'Destroy Comment', [info.article, info],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

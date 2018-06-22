@@ -1,0 +1,24 @@
+<h1>Show Article</h1>
+
+<p>
+  <strong>Name :</strong>
+  <%= @article.name %>
+</p>
+
+<p>
+  <strong>Lastname :</strong>
+  <span><%= @article.lastname %>
+</p>
+
+<p>
+  <strong>Age :</strong>
+  <%= @article.age %>
+</p>
+
+<h2>Address</h2>
+<%= render @article.infos %>
+
+<h2>Add a address:</h2>
+<%= render 'infos/form' %>
+
+<%= link_to 'Back', articles_path%>
